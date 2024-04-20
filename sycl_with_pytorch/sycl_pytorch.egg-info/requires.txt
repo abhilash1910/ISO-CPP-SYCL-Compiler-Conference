@@ -1,0 +1,20 @@
+ninja
+psutil
+numpy
+wheel
+torch@ https://intel-extension-for-pytorch.s3.amazonaws.com/ipex_stable/xpu/torch-2.1.0a0%2Bcxx11.abi-cp310-cp310-linux_x86_64.whl
+intel_extension_for_pytorch@ https://intel-extension-for-pytorch.s3.amazonaws.com/ipex_stable/xpu/intel_extension_for_pytorch-2.1.10%2Bxpu-cp310-cp310-linux_x86_64.whl
+oneccl_bind_pt@ https://intel-extension-for-pytorch.s3.amazonaws.com/ipex_stable/xpu/oneccl_bind_pt-2.1.100%2Bxpu-cp310-cp310-linux_x86_64.whl
+triton@ https://github.com/intel/intel-xpu-backend-for-triton/releases/download/v2.1.0/triton-2.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+cmake>=3.21
+tqdm
+
+[quality]
+ruff==0.1.5
+
+[test]
+pytest
+parameterized
+
+[triton]
+triton==2.0.0

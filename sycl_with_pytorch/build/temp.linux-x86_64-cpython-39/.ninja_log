@@ -1,0 +1,6 @@
+# ninja log v5
+2	31738	1713597803393312905	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	eff2040dbda56048
+1222	32578	1713600659349245322	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	ebbbc29cebe57aea
+180	30065	1713600898426067701	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o	62e17a85a8c83a75
+1261	33939	1713617350316030743	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o	981ce076a68ec46e
+1260	38572	1713617355010007622	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	306ea1d0a0fefba4

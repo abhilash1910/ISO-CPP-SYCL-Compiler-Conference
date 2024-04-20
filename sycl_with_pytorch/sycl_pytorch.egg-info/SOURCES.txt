@@ -1,0 +1,8 @@
+setup.py
+kernels/sycl_activation_kernels.cpp
+kernels/sycl_layernorm_kernel.cpp
+sycl_pytorch.egg-info/PKG-INFO
+sycl_pytorch.egg-info/SOURCES.txt
+sycl_pytorch.egg-info/dependency_links.txt
+sycl_pytorch.egg-info/requires.txt
+sycl_pytorch.egg-info/top_level.txt

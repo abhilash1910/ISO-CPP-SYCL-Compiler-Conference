@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sycl-pytorch
+Version: 0.0.0.dev0+sycl0.0.1
+Summary: A collection of Deep Learning SYCL Kernels with Pytorch for ISO::C++.
+Home-page: 
+Author: Abhilash Majumder
+Keywords: activation,quantization,llm-kernels,sycl,pytorch Aten
+Platform: linux
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: C++
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Provides-Extra: triton
+Provides-Extra: test
+Provides-Extra: quality

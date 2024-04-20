@@ -1,0 +1,21 @@
+ninja_required_version = 1.3
+cxx = icpx
+
+cflags = -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/majumder/miniconda/envs/majumder_devkit_24may/include -I/home/majumder/miniconda/envs/majumder_devkit_24may/include -fPIC -O2 -isystem /home/majumder/miniconda/envs/majumder_devkit_24may/include -fPIC -Ikernels/utils.h -Ikernels/reduction_utils.h -I/home/majumder/miniconda/envs/majumder_devkit_24may/lib/python3.9/site-packages/torch/include -I/home/majumder/miniconda/envs/majumder_devkit_24may/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/home/majumder/miniconda/envs/majumder_devkit_24may/lib/python3.9/site-packages/torch/include/TH -I/home/ftartagl/oneapi/inteloneapi-basekit-hpckit-2023.1.002_PUBLIC/compiler/2023.1.0/linux/include -I/home/ftartagl/oneapi/inteloneapi-basekit-hpckit-2023.1.002_PUBLIC/compiler/2023.1.0/linux/include/sycl -I/home/ftartagl/oneapi/inteloneapi-basekit-hpckit-2023.1.002_PUBLIC/mkl/2023.1.0/include -I/home/ftartagl/oneapi/inteloneapi-basekit-hpckit-2023.1.002_PUBLIC/dnnl/2023.1.0/cpu_dpcpp_gpu_dpcpp/include -I/home/majumder/miniconda/envs/majumder_devkit_24may/lib/python3.9/site-packages/intel_extension_for_pytorch/include -I/home/majumder/miniconda/envs/majumder_devkit_24may/include/python3.9 -c
+post_cflags = -fsycl -O3 -std=c++20 -w -fPIC -DMKL_ILP64 -Wno-narrowing -fsycl -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=sycl_pytorch -D_GLIBCXX_USE_CXX11_ABI=1
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+build /home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o: compile /home/majumder/seminar/sycl_with_pytorch/kernels/sycl_activation_kernels.cpp
+build /home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o: compile /home/majumder/seminar/sycl_with_pytorch/kernels/sycl_layernorm_kernel.cpp
+
+
+
+
+
