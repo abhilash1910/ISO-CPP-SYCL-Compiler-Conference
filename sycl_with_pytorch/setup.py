@@ -92,7 +92,9 @@ if BUILD_SYCL:
     
     sycl_source_files = [
                 "kernels/sycl_activation_kernels.cpp",
-                "kernels/sycl_layernorm_kernel.cpp"
+                "kernels/sycl_layernorm_kernel.cpp",
+                "kernels/sycl_positional_embedding_kernels.cpp",
+                "kernels/sycl_self_attention.cpp"
                 
             ]
    

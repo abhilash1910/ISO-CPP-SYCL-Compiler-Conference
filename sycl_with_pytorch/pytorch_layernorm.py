@@ -3,12 +3,11 @@ from typing import Optional, Tuple, Union
 
 import torch
 import torch.nn as nn
+import intel_extension_for_pytorch
 
-#import sycl_pytorch as ops
-from torch.utils.cpp_extension import load
+#from torch.utils.cpp_extension import load
+import sycl_pytorch as ops
 
-# Load the compiled library
-ops = load(name='sycl_pytorch', sources="/home/majumder/seminar/sycl_with_pytorch/build/lib.linux-x86_64-cpython-39/sycl_pytorch.cpython-39-x86_64-linux-gnu.so" ,verbose=True)
 
 
 DTYPES = [torch.half, torch.bfloat16, torch.float]
@@ -16,7 +15,7 @@ NUM_TOKENS = [7, 83, 4096]  # Arbitrary values for testing
 HIDDEN_SIZES = [768, 5120, 8192]  # Arbitrary values for testing
 ADD_RESIDUAL = [False, True]
 SEEDS = [0]
-DEVICES = ["xpu"]#, "cuda", "hip"
+DEVICES = ["xpu"]#, "cuda", "hip"-> compile ptx/amdgcn targets
 
 class RMSNorm(nn.Module):
     """Root mean square normalization.

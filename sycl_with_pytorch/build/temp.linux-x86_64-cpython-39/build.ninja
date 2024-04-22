@@ -12,8 +12,10 @@ rule compile
 
 
 
-build /home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o: compile /home/majumder/seminar/sycl_with_pytorch/kernels/sycl_activation_kernels.cpp
-build /home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o: compile /home/majumder/seminar/sycl_with_pytorch/kernels/sycl_layernorm_kernel.cpp
+build /home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o: compile /home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/kernels/sycl_activation_kernels.cpp
+build /home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o: compile /home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/kernels/sycl_layernorm_kernel.cpp
+build /home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_positional_embedding_kernels.o: compile /home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/kernels/sycl_positional_embedding_kernels.cpp
+build /home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_self_attention.o: compile /home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/kernels/sycl_self_attention.cpp
 
 
 

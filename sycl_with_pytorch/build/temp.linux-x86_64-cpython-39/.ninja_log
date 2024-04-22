@@ -1,6 +1,11 @@
 # ninja log v5
-2	31738	1713597803393312905	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	eff2040dbda56048
-1222	32578	1713600659349245322	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	ebbbc29cebe57aea
-180	30065	1713600898426067701	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o	62e17a85a8c83a75
-1261	33939	1713617350316030743	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o	981ce076a68ec46e
-1260	38572	1713617355010007622	/home/majumder/seminar/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	306ea1d0a0fefba4
+5	28438	1713701191214055936	/home/majumder/seminar/std_Cpp/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	9d8be87359344d8e
+5	28665	1713701191454054753	/home/majumder/seminar/std_Cpp/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o	719907f7c72a5bd7
+1183	28560	1713701462571719309	/home/majumder/seminar/std_Cpp/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_positional_embedding_kernels.o	9044ecff9e7023c9
+13	29095	1713769286220640642	/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_positional_embedding_kernels.o	e5720b68aa04fb71
+13	29551	1713769286674638406	/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o	3c9ed58a1f21b87e
+13	33134	1713769290299620550	/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	1047b33341f71fc
+1568	28767	1713779972816001828	/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_activation_kernels.o	1047b33341f71fc
+1569	28980	1713779973083000513	/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_positional_embedding_kernels.o	e5720b68aa04fb71
+1569	33297	1713779977447979012	/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_layernorm_kernel.o	3c9ed58a1f21b87e
+55	24102	1713783337099430376	/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/sycl_with_pytorch/build/temp.linux-x86_64-cpython-39/kernels/sycl_self_attention.o	adf81d6c6b28f3e9

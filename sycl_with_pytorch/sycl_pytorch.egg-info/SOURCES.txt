@@ -1,6 +1,8 @@
 setup.py
 kernels/sycl_activation_kernels.cpp
 kernels/sycl_layernorm_kernel.cpp
+kernels/sycl_positional_embedding_kernels.cpp
+kernels/sycl_self_attention.cpp
 sycl_pytorch.egg-info/PKG-INFO
 sycl_pytorch.egg-info/SOURCES.txt
 sycl_pytorch.egg-info/dependency_links.txt
