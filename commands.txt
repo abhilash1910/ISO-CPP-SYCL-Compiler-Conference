@@ -1,0 +1,16 @@
+## Commands for SYCL build
+
+icpx -fsycl-device-only -fno-sycl-use-bitcode block_reduce.cpp -o block_reduce.spv
+icpx -fsycl block_load_store.cpp -o block_load_store.o
+icpx -fsycl --emit-llvm int2_quant_kernel_sycl.cpp -o int2_quant_kernel_sycl.o
+icpx -fsycl-device-only -Xsycl-target-backend=nvptx64-nvidia-cuda -emit-llvm  -c sycl_llvm_kernel.cpp -o sycl_llvm_kernel_ptx.ll
+
+clang++ -fsycl-device-only -std=c++17 -fno-sycl-use-bitcode block_reduce.cpp -o block_reduce.spv
+
+llvm-dis block_reduce.bc 
+
+clang++ -std=c++17 -fsycl -fsycl-device-only -emit-llvm -S -c block_reduce.cpp -o block_reduce.ll
+
+## Commands for DNNL build
+
+icpx -I /onednn/oneDNN/include dnn_int8_kernel.cpp -ldnnl -o  dnn_int8_kernel.o
