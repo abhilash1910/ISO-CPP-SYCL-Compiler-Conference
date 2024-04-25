@@ -48,5 +48,19 @@ LLMs and generative models have become the mainstream deep learning architecture
 <img src = "img/6.png">
 
 
+#### References
+
+Code For the Talk: (OS)
+
+- https://github.com/oneapi-src/oneAPI-samples
+- https://github.com/oneapi-src/oneDNN
+- https://github.com/intel/llvm
+
+Some resource for oneAPI/SYCL
+ 
+- https://intel.github.io/llvm-docs/
+- https://www.intel.com/content/www/us/en/docs/oneapi/code-samples-dpcpp/2023-1.html
+- https://www.intel.com/content/www/us/en/docs/oneapi/optimization-guide-gpu
+
 
 
