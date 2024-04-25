@@ -70,5 +70,5 @@ int main(){
   }
 
   call_command_queue(data);
-
+  return 0;
 }
