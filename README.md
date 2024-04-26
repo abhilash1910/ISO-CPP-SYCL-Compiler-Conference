@@ -60,7 +60,9 @@ Some resource for oneAPI/SYCL
  
 - https://intel.github.io/llvm-docs/
 - https://www.intel.com/content/www/us/en/docs/oneapi/code-samples-dpcpp/2023-1.html
-- https://www.intel.com/content/www/us/en/docs/oneapi/optimization-guide-gpu
-
+- https://www.intel.com/content/www/us/en/docs/oneapi/optimization-guide-gpu
+- https://www.intel.com/content/www/us/en/docs/dpcpp-cpp-compiler/developer-guide-reference
+- https://www.intel.com/content/www/us/en/developer/articles/technical
+- https://www.intel.com/content/www/us/en/developer/articles/technical/transfer-learning-with-tensorflow-on-arc-gpus.html
 
 
