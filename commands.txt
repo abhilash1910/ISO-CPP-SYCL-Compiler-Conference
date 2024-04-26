@@ -4,12 +4,35 @@ icpx -fsycl-device-only -fno-sycl-use-bitcode block_reduce.cpp -o block_reduce.s
 icpx -fsycl block_load_store.cpp -o block_load_store.o
 icpx -fsycl --emit-llvm int2_quant_kernel_sycl.cpp -o int2_quant_kernel_sycl.o
 icpx -fsycl-device-only -Xsycl-target-backend=nvptx64-nvidia-cuda -emit-llvm  -c sycl_llvm_kernel.cpp -o sycl_llvm_kernel_ptx.ll
-
 clang++ -fsycl-device-only -std=c++17 -fno-sycl-use-bitcode block_reduce.cpp -o block_reduce.spv
-
 llvm-dis block_reduce.bc 
-
 clang++ -std=c++17 -fsycl -fsycl-device-only -emit-llvm -S -c block_reduce.cpp -o block_reduce.ll
+
+
+## Commands for ICPX  optimizations (AOT)
+
+icpx -c main.cpp      // This creates the host object that is used below (no kernel code)
+icpx -c -fsycl-targets=spir64_x86_64 -Xsycl-target-backend "-march=mavx2" block_reduce.cpp // kernel code
+icpx -fsycl-targets=spir64_x86_64 -Xsycl-target-backend "-march=mavx2" block_reduce.o main.o //link kernel code
+
+## Commands for O level optimization
+
+icpx -fsycl-device-only  -O3 -Wno-narrowing attention_sycl_kernel.cpp -o attention_sycl_kernel.o
+
+## Third party host only compiler
+
+icpx -fsycl -fsycl-host-compiler=g++ main.cpp -o main.o
+
+## OpenMP offload
+
+icpx -qopenmp -fopenmp-targets=spir64 block_reduce.cpp
+
+## L0 Switch 
+
+ONEAPI_DEVICE_SELECTOR="opencl:gpu;level_zero:gpu"
+ONEAPI_DEVICE_SELECTOR=hip:0,2
+sycl-ls
+
 
 ## Commands for DNNL build
 
