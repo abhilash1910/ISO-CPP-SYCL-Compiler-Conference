@@ -1,0 +1,658 @@
+---
+MainSourceFile:  ''
+Replacements:
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          250
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          268
+    Length:          0
+    ReplacementText: "\n#include <cmath>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          365
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          457
+    Length:          27
+    ReplacementText: 'static dpct::constant_memory<TestStruct, 0> t1;'
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  457
+    InitStr:         t1
+    NewHostVarName:  t1_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          577
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          604
+    Length:          0
+    ReplacementText: TestStruct t1
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          789
+    Length:          81
+    ReplacementText: "static dpct::constant_memory<float, 1> const_angle(360);\nstatic dpct::constant_memory<float, 2> const_float(NUM_ELEMENTS, num_elements * 2);"
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  789
+    InitStr:         ''
+    NewHostVarName:  const_angle_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          937
+    Length:          27
+    ReplacementText: 'static dpct::constant_memory<sycl::double2, 0> vec_d;'
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  937
+    InitStr:         vec_d
+    NewHostVarName:  vec_d_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          1029
+    Length:          28
+    ReplacementText: 'static dpct::constant_memory<int *, 0> const_ptr;'
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  1029
+    InitStr:         ''
+    NewHostVarName:  const_ptr_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          1157
+    Length:          49
+    ReplacementText: 'static dpct::constant_memory<int, 1> const_init(sycl::range<1>(5), {1, 2, 3, 7, 8});'
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  1157
+    InitStr:         '{1, 2, 3, 7, 8}'
+    NewHostVarName:  const_init_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          1371
+    Length:          108
+    ReplacementText: 'static dpct::constant_memory<int, 2> const_init_2d(sycl::range<2>(5, 5), {{1, 2, 3, 7, 8}, {2, 4, 5, 8, 2}, {4, 7, 8, 0}, {1, 3}, {4, 0, 56}});'
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  1371
+    InitStr:         '{{1, 2, 3, 7, 8}, {2, 4, 5, 8, 2}, {4, 7, 8, 0}, {1, 3}, {4, 0, 56}}'
+    NewHostVarName:  const_init_2d_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          1665
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          1713
+    Length:          0
+    ReplacementText: ', float const *const_angle'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          2341
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          2385
+    Length:          0
+    ReplacementText: ", const sycl::nd_item<3> &item_ct1,\n                   float const *const_angle, int * const const_ptr"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          2414
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          2427
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          2440
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          2584
+    Length:          0
+    ReplacementText: ', const_angle'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          2665
+    Length:          40
+    ReplacementText: 'static dpct::constant_memory<float, 0> const_one;'
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  2676
+    InitStr:         ''
+    NewHostVarName:  const_one_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          3244
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          3292
+    Length:          0
+    ReplacementText: ", const sycl::nd_item<3> &item_ct1,\n                       dpct::accessor<float, dpct::constant, 2> const_float,\n                       float const_one"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          3321
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          3334
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          3347
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          3497
+    Length:          0
+    ReplacementText: "\n  dpct::device_ext &dev_ct1 = dpct::get_current_device();\n  sycl::queue &q_ct1 = dev_ct1.in_order_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          3843
+    Length:          51
+    ReplacementText: 'd_array = sycl::malloc_device<float>(size, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          3899
+    Length:          38
+    ReplacementText: 'd_int = sycl::malloc_device<int>(size, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4012
+    Length:          10
+    ReplacementText: q_ct1.memset
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4056
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4230
+    Length:          18
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4249
+    Length:          9
+    ReplacementText: 'const_ptr.get_ptr()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4373
+    Length:          18
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4392
+    Length:          15
+    ReplacementText: 'const_angle.get_ptr()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4539
+    Length:          18
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4558
+    Length:          15
+    ReplacementText: 'const_angle.get_ptr() + 3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4704
+    Length:          20
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4738
+    Length:          15
+    ReplacementText: 'const_angle.get_ptr() + 3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4891
+    Length:          18
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          4910
+    Length:          19
+    ReplacementText: 'const_angle.get_ptr() + 3+NUM'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          5064
+    Length:          20
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          5098
+    Length:          19
+    ReplacementText: 'const_angle.get_ptr() + 3+NUM'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          5707
+    Length:          22
+    ReplacementText: "q_ct1.submit(\n    [&](sycl::handler &cgh) {\n      t1.init();\n\n      auto t1_ptr_ct1 = t1.get_ptr();\n\n      cgh.parallel_for(\n        sycl::nd_range<3>(sycl::range<3>(1, 1, 1), sycl::range<3>(1, 1, 1)), \n        [=](sycl::nd_item<3> item_ct1) {\n          member_acc(*t1_ptr_ct1);\n        });\n    });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          5729
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          6523
+    Length:          41
+    ReplacementText: "q_ct1.submit(\n    [&](sycl::handler &cgh) {\n      const_angle.init();\n      const_ptr.init();\n\n      auto const_angle_ptr_ct1 = const_angle.get_ptr();\n      auto const_ptr_ptr_ct1 = const_ptr.get_ptr();\n\n      cgh.parallel_for(\n        sycl::nd_range<3>(sycl::range<3>(1, 1, size / 64) * sycl::range<3>(1, 1, 64), sycl::range<3>(1, 1, 64)), \n        [=](sycl::nd_item<3> item_ct1) {\n          simple_kernel(d_array, item_ct1, const_angle_ptr_ct1, *const_ptr_ptr_ct1);\n        });\n    });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          6564
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          6670
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          6719
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          6744
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          6992
+    Length:          18
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          7011
+    Length:          10
+    ReplacementText: 'const_one.get_ptr()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          7054
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          7061
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          7923
+    Length:          56
+    ReplacementText: "stream->submit(\n    [&](sycl::handler &cgh) {\n      const_float.init(*stream);\n      const_one.init(*stream);\n\n      auto const_one_ptr_ct1 = const_one.get_ptr();\n\n      auto const_float_acc_ct1 = const_float.get_access(cgh);\n\n      cgh.parallel_for(\n        sycl::nd_range<3>(sycl::range<3>(1, 1, size / 64) * sycl::range<3>(1, 1, 64), sycl::range<3>(1, 1, 64)), \n        [=](sycl::nd_item<3> item_ct1) {\n          simple_kernel_one(d_array, item_ct1, const_float_acc_ct1, *const_one_ptr_ct1);\n        });\n    });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          7979
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          8061
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          8110
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          8135
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          8266
+    Length:          17
+    ReplacementText: 'sycl::free(d_array, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          9094
+    Length:          27
+    ReplacementText: 'static dpct::constant_memory<float, 1> aaa(10);'
+    ConstantFlag:    DeviceConstant
+    ConstantOffset:  9094
+    InitStr:         ''
+    NewHostVarName:  aaa_host_ct1
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          9123
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          9147
+    Length:          0
+    ReplacementText: 'float const *aaa'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          9165
+    Length:          7
+    ReplacementText: 'const_cast<float *>(aaa + 5)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          9195
+    Length:          19
+    ReplacementText: "dpct::get_in_order_queue().submit(\n    [&](sycl::handler &cgh) {\n      aaa.init();\n\n      auto aaa_ptr_ct1 = aaa.get_ptr();\n\n      cgh.parallel_for(\n        sycl::nd_range<3>(sycl::range<3>(1, 1, 1), sycl::range<3>(1, 1, 1)), \n        [=](sycl::nd_item<3> item_ct1) {\n          kernel1(aaa_ptr_ct1);\n        });\n    });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Offset:          9214
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT/cuda_usm.cu'
+    Digest:          53a70735c7a0341796d2b17d3caf2fbb
+DpctVersion:     2024.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/majumder/std_cpp/ISO-CPP-SYCL-Compiler-Conference/DPCT'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           ''
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  HelperFuncPreferenceFlag:
+    Value:           '0'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  NoUseGenericSpace:
+    Value:           ''
+    Specified:       true
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'true'
+    Specified:       true
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...
